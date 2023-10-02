@@ -1,0 +1,14 @@
+ADMINISTRADOR:
+usuario: admin
+contraseña: admin
+
+VENDEDOR
+usuario: vendedor
+contraseña: vendedor
+
+
+Supervisor
+usuario: supervisor
+contraseña: supervisor
+
+Si no son esos usuarios, el sistema detectará que el usuario ingresado no existe

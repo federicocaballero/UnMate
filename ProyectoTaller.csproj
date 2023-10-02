@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6C093A9-7EEF-4369-94F2-8798018A7D79}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoTaller</RootNamespace>
+    <AssemblyName>ProyectoTaller</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Capas\Capa presentacion\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\GestionProductos\ListaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\GestionProductos\ListaProductos.Designer.cs">
+      <DependentUpon>ListaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\GestionVentas\DetalleDeVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\GestionVentas\DetalleDeVenta.Designer.cs">
+      <DependentUpon>DetalleDeVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\GestionVentas\ListadoVentasVendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\GestionVentas\ListadoVentasVendedores.Designer.cs">
+      <DependentUpon>ListadoVentasVendedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\PerfilAdmin\PerfilAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\PerfilAdmin\PerfilAdministrador.Designer.cs">
+      <DependentUpon>PerfilAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\Seguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\Seguridad.Designer.cs">
+      <DependentUpon>Seguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\GestionUsuarios\ListaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\GestionUsuarios\ListaUsuarios.Designer.cs">
+      <DependentUpon>ListaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\MenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaAdministrador\MenuAdmin.Designer.cs">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaSupervisor\Estadisticas\EstadisticasObtenidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaSupervisor\Estadisticas\EstadisticasObtenidas.Designer.cs">
+      <DependentUpon>EstadisticasObtenidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaSupervisor\GestionProveedores\ListaProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaSupervisor\GestionProveedores\ListaProveedores.Designer.cs">
+      <DependentUpon>ListaProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaSupervisor\GestionProveedores\PedidoProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaSupervisor\GestionProveedores\PedidoProveedores.Designer.cs">
+      <DependentUpon>PedidoProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaSupervisor\MenuSupervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaSupervisor\MenuSupervisor.Designer.cs">
+      <DependentUpon>MenuSupervisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaSupervisor\PerfilSuperv\PerfilSupervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaSupervisor\PerfilSuperv\PerfilSupervisor.Designer.cs">
+      <DependentUpon>PerfilSupervisor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\GestionClientes\GestionCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\GestionClientes\GestionCliente.Designer.cs">
+      <DependentUpon>GestionCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\GestionClientes\Notas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\GestionClientes\Notas.Designer.cs">
+      <DependentUpon>Notas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\GestionVentas\DetalleCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\GestionVentas\DetalleCompra.Designer.cs">
+      <DependentUpon>DetalleCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\GestionVentas\ListadoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\GestionVentas\ListadoProducto.Designer.cs">
+      <DependentUpon>ListadoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\GestionVentas\ListadoVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\GestionVentas\ListadoVentas.Designer.cs">
+      <DependentUpon>ListadoVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\GestionVentas\RegistrarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\GestionVentas\RegistrarVenta.Designer.cs">
+      <DependentUpon>RegistrarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\MenuVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\MenuVendedor.Designer.cs">
+      <DependentUpon>MenuVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\PerfilVendedor\PerfilVendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capas\Capa presentacion\VistaVendedor\PerfilVendedor\PerfilVendedores.Designer.cs">
+      <DependentUpon>PerfilVendedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Capas\Capa presentacion\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaAdministrador\GestionProductos\ListaProductos.resx">
+      <DependentUpon>ListaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaAdministrador\GestionVentas\DetalleDeVenta.resx">
+      <DependentUpon>DetalleDeVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaAdministrador\GestionVentas\ListadoVentasVendedores.resx">
+      <DependentUpon>ListadoVentasVendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaAdministrador\PerfilAdmin\PerfilAdministrador.resx">
+      <DependentUpon>PerfilAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaAdministrador\Seguridad.resx">
+      <DependentUpon>Seguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaAdministrador\GestionUsuarios\ListaUsuarios.resx">
+      <DependentUpon>ListaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaAdministrador\MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaSupervisor\Estadisticas\EstadisticasObtenidas.resx">
+      <DependentUpon>EstadisticasObtenidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaSupervisor\GestionProveedores\ListaProveedores.resx">
+      <DependentUpon>ListaProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaSupervisor\GestionProveedores\PedidoProveedores.resx">
+      <DependentUpon>PedidoProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaSupervisor\MenuSupervisor.resx">
+      <DependentUpon>MenuSupervisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaSupervisor\PerfilSuperv\PerfilSupervisor.resx">
+      <DependentUpon>PerfilSupervisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaVendedor\GestionClientes\GestionCliente.resx">
+      <DependentUpon>GestionCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaVendedor\GestionClientes\Notas.resx">
+      <DependentUpon>Notas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaVendedor\GestionVentas\DetalleCompra.resx">
+      <DependentUpon>DetalleCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaVendedor\GestionVentas\ListadoProducto.resx">
+      <DependentUpon>ListadoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaVendedor\GestionVentas\ListadoVentas.resx">
+      <DependentUpon>ListadoVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaVendedor\GestionVentas\RegistrarVenta.resx">
+      <DependentUpon>RegistrarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaVendedor\MenuVendedor.resx">
+      <DependentUpon>MenuVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capas\Capa presentacion\VistaVendedor\PerfilVendedor\PerfilVendedores.resx">
+      <DependentUpon>PerfilVendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes_mate\mate-imperial.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes_mate\mate-acero.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes_mate\mate_negro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes_usuarios\usuario_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes_usuarios\usuario_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes_usuarios\usuario_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Capas\Capa presentacion\VistaVendedor\Administracion\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\iconos\icono.ico" />
+    <None Include="bin\Debug\iconos\admin.ico" />
+    <None Include="bin\Debug\iconos\supervisor.ico" />
+    <None Include="bin\Debug\iconos\salesman_avatar_icon_133993.ico" />
+    <Content Include="Capas\Capa datos\USUARIOS.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
