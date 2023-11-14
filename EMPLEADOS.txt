@@ -1,0 +1,9 @@
+Administrador
+DNI: 1111 Contraseña: 1234
+
+Vendedor
+DNI: 2222 Contraseña: 1234
+
+Supervisor
+DNI: 3333 Contraseña: 1234
+
